@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial; background: #0b0f17; color: #e6eef8; }
+.container { max-width: 860px; margin: 2rem auto; padding: 1.25rem; background: #111827; border: 1px solid #1f2937; border-radius: 16px; }
+h1 { margin-top: 0; }
+.subtitle { opacity: .8; margin-top: -0.5rem; }
+.buttons { display: flex; gap: .75rem; margin: 1rem 0; flex-wrap: wrap; }
+button { padding: .6rem 1rem; border-radius: 12px; border: 1px solid #334155; background: #0ea5e9; color: white; font-weight: 600; cursor: pointer; }
+button:hover { filter: brightness(1.05); }
+.hint { opacity: .7; }
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: .5rem; }
+.list-item { display: flex; align-items: center; justify-content: space-between; padding: .75rem 1rem; background: #0f172a; border: 1px solid #1f2937; border-radius: 12px; }
+
+.loading { padding: .75rem 1rem; background: #0f172a; border: 1px solid #1f2937; border-radius: 12px; display: inline-block; }
+/* Modal */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: grid; place-items: center; }
+.modal { width: 100%; max-width: 480px; background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 1rem; }
+.modal input { width: 100%; padding: .6rem .8rem; margin-top: .5rem; border-radius: 10px; border: 1px solid #334155; background: #0f172a; color: #e6eef8; }
+.modal-actions { display: flex; justify-content: flex-end; gap: .5rem; margin-top: .75rem; }
